@@ -23,26 +23,46 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
   </head>
   <body style="background:#000;">
+          <!-- Menu -->
+      <nav id="menu">
+        <ul>
+          <div class="logo-menu-container">
+            <img src="img/logowhite.png" class="logo-menu">
+          </div>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#que-hacemos">Servicios</a></li>
+            <li><a href="#artistas">Artistas</a></li>
+            <li><a href="#">Cartelera</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <div class="social-container">
+              <a href="https://www.facebook.com/GAMAArtBiz/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+         </ul>
+      </nav>
     <div class="page">
-      <video loop="loop" poster="video/videobg_bw.png" id="bgvid" playsinline muted loop>
+      <video loop="loop" poster="video/videobg_bw.png" id="bgvid" playsinline autoplay muted loop>
         <source src="video/videobg_bw.webm" type="video/webm">
         <source src="video/videobg_bw.mp4" type="video/mp4">
       </video>
          <header class="header">
            <div class="container-fluid">
-             <nav class="navbar justify-content-between">
+             <nav class="navbar fixed-top justify-content-between Fixed" id="navbar">
               <a class="navbar-brand"><img src="img/logowhite.png" class="logo-white"></a>
-              <a href="#menu" id="nav-btn"><i id="nav-icon" class="fas fa-bars icon-menu"></i></a>
+              <a href="#menu" id="nav-btn"><i class="fas fa-bars icon-menu"></i></a>
             </nav>
            </div>
          </header>
+      <div class="index-spacing"></div>
       <div class="border-container">
         <div class="top-border"></div>
       </div>
-      <section class="light-section">
+      <section class="light-section" id="nosotros">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-3 gama">
+            <div class="col-md-6 col-xl-3 gama">
               <h1>GAMA Art Biz</h1>
               <p>
                 GAMA Art Biz es un grupo de gestión cultural basado en la economía naranja, que tiene como objetivo general dar a conocer los trabajos de artistas del caribe colombiano en el ámbito nacional e internacional.
@@ -57,39 +77,117 @@
       <div class="border-container">
         <div class="bot-border"></div>
       </div>
-      <section class="dark-section offset-section">
+      <section class="dark-section offset-section" id="que-hacemos">
         <div class="container-fluid">
-          <div class="gama">
+          <div class="gama text-center que-hacemos">
             <h1>¿Qué hacemos?</h1>
           </div>
           <div class="row">
-            <div>
-              <i class="fas fa-handshake"></i>
+            <div class="col-6 col-md-3 col-xl-3 b-item text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x" style="color:#f6741e;width:1.5em;height:1.5em;"></i>
+                <i class="fa fas fa-handshake icon-orange fa-inverse fa-stack-1x"></i>
+              </span>
+              <h1>Gestión de Eventos</h1>
+              <p>Con la experiencia de más de 15 años de nuestra agencia de publicidad y BTL, en Gama Art Biz ofrecemos la creación, coordinación y producción de eventos en vivo, tanto musicales como de otros géneros culturales, así como lanzamientos de producto o activación de marcas.</p>
+            </div>
+            <div class="col-6 col-md-3 col-xl-3 b-item text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x" style="color:#f6741e;width:1.5em;height:1.5em;"></i>
+                <i class="fa fas fa-handshake icon-orange fa-inverse fa-stack-1x"></i>
+              </span>
+              <h1>Gestión de Mercados Internacionales</h1>
+              <p>GAMA Art Biz somos invitados y asistimos como comprador y acompañante de artistas y agrupaciones de Barranquilla a mercados culturales, internacionales y nacionales, tales como: WOMEX, VIA, BoMM, Circulart, MAPAS, etc.</p>
+            </div>
+            <div class="col-6 col-md-3 col-xl-3 b-item text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x" style="color:#f6741e;width:1.5em;height:1.5em;"></i>
+                <i class="fa fas fa-handshake icon-orange fa-inverse fa-stack-1x"></i>
+              </span>
+              <h1>Asesoría de Artistas</h1>
+              <p>Analizamos los proyectos y creamos diagnosticos de los mismos, a partir de eso realizamos planes estratégicos y presupuestos para el desarrollo y crecimiento profesional del artista.</p>
+            </div>
+            <div class="col-6 col-md-3 col-xl-3 b-item text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x" style="color:#f6741e;width:1.5em;height:1.5em;"></i>
+                <i class="fa fas fa-handshake icon-orange fa-inverse fa-stack-1x"></i>
+              </span>
+              <h1>Formación de Talleres</h1>
+              <p>Ofrecemos a instituciones y universidades talleres, seminarios o conferencias relacionados con la industria de la música y las artes escénicas.</p>
             </div>
           </div>
         </div>
       </section>
-    </div>
-
-      <!-- Menu -->
-      <nav id="menu">
-        <ul>
-          <div class="logo-menu-container">
-            <img src="img/logowhite.png" class="logo-menu">
+      <div class="border-container">
+        <div class="i-bot-border"></div>
+      </div>
+      <section class="band-section container-fluid" id="artistas">
+        <div class="row">
+          <p class="band-section-title">¡Cónoce nuestros artistas!</p>
+        </div>
+        <div class="row">
+          <div class="band crankers col-4 col-xl-2">
+            <h1>Los Crankers</h1>
           </div>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Artistas</a></li>
-            <li><a href="#">Cartelera</a></li>
-            <li><a href="#">Contacto</a></li>
-            <div class="social-container">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+          <div class="band sicotropico col-4 col-xl-2">
+            <h1>Sicotrópico</h1>
+          </div>
+          <div class="band aguaeyuyo col-4 col-xl-2">
+            <h1>Agua e' Yuyo</h1>
+          </div>
+          <div class="band delabsurdo col-4 col-xl-2">
+            <h1>Del Absurdo</h1>
+          </div>
+          <div class="band stereocuco col-4 col-xl-2">
+            <h1>Stereocuco</h1>
+          </div>
+          <div class="band karnivale col-4 col-xl-2">
+            <h1>Karnívale</h1>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contacto">
+        <div class="container-fluid">
+          <div class="col-md-5 col-xl-3 gama">
+            <h1 style="margin-bottom: 30px;">¡Escríbenos!</h1>
+            <div class="contact-form text-center">
+              <h3 style="color:white;font-size:1.2em;font-family:'flamabold'"><?php echo $_GET[msg];?></h3>
+              <form name="enq" method="post" action="<?= bloginfo('template_directory') ?>/email/index.php" onsubmit="return validation();">
+                <input type="text" name="name" id="name" value=""  class="input-block-level height-form ecf-form" placeholder="Nombre" /><br>
+                <input type="text" name="email" id="email" value="" class="input-block-level height-form ecf-form" placeholder="Email" /><br>
+                <textarea rows="11" name="message" id="message" class="input-block-level ecf-form-comment " placeholder="Comentario"></textarea>
+                <br>
+                <div class="actions text-center">
+                  <input type="submit" value="Enviar" name="submit" id="submitButton" class="btn btn-submit leer-mas" title="Click here to submit your message!" />
+                </div>
+              </form>
             </div>
-         </ul>
-      </nav>
+          </div>   
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid">
+          <div class="row align-items-end xs-vertical">
+            <div class="col-6 col-sm-4 order-1 order-sm-1">
+              <div>
+                <h2>Aliados:</h2>
+              </div>
+              <a href="#" target="_blank"><img src="img/logo-redlat.jpg" width="65"></a>
+            </div>
+            <div class="col-12 col-sm-4 order-3 order-sm-2 text-center">
+              <img src="img/gamagray.png" class="gray-logo">
+              <h2 class="rights">© 2018 GAMA Art Biz -  TODOS LOS DERECHOS RESERVADOS</h2>
+            </div>
+            <div class="col-6 social-network text-right xs-center col-sm-4 order-2 order-sm-3">
+              <a href="https://www.facebook.com/GAMAArtBiz/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/gamaartbiz" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/gamaart_biz/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -103,8 +201,10 @@
                   "pagedim-black",
                   "theme-dark",
                   "position-back",
-                  "position-right"
+                  "position-right",
                ]
+            }, {
+              "close": true,
             });
          });
       </script>
