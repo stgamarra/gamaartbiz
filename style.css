@@ -55,7 +55,7 @@ video {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   z-index: -500;
   background-size: cover;
@@ -141,7 +141,7 @@ video {
   color: #fe1e30 !important;
 }
 .logo-menu {
-  width: 40%;
+  width: 200px;
 }
 .logo-menu-container {
   display: flex;
@@ -566,5 +566,19 @@ footer h2 {
   }
   footer {
     padding-top: 45px;
+  }
+  .mm-listitem > a,
+  .mm-listitem > span {
+    padding: 25px 30px 10px 30px;
+  }
+  .mm-listitem {
+    font-size: 0.75em;
+  }
+  .logo-menu {
+    margin-bottom: 15px;
+  }
+  .social-container a {
+    padding: 10px 10px !important;
+    font-size: 1.1em !important;
   }
 }
