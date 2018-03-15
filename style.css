@@ -141,10 +141,10 @@ video {
   color: #fe1e30 !important;
 }
 .logo-menu {
-  width: 120px;
+  width: 35%;
 }
 .logo-menu-container {
-  display: flex;
+  display: block;
   align-items: start;
   border-color: transparent !important;
   padding: 0px 30px;
